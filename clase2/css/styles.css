@@ -1,4 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* estilos externos */
 body {
   background-color: black;
 }
+
+/* link */
+a {
+  color: #117a37;
+}
+
+/* color verde #117a37 */
+/* color body #1c1e1f */

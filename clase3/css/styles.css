@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.contenedor {
+  background-color: #e3e3e3;
+  border: 1px solid #333;
+  padding: 12px;
+  /*margin: 50px;  50px espaciado a todas las direcciones top, right, bottom, left*/
+  margin: 10px 20px; /* 10px espaciado de forma vertical y 20px de espaciado de forma horizontal*/
+  /*margin: 10px 5px 15px 40px; /* 10px hacia arriba, 5px hacia la derecha, 15 hacia abajo o bottom y 40 hacia la izquierda */
+}
+
+/* selector hijo*/
+#selectorHijo p {
+  color: blue;
+}
+
+/* selector hijo directo */
+#selectorHijoDirecto > p {
+  color: red;
+}
+
+/* selector hermano general (~)
+    selecciona a TODAS las etiquetas hermanos
+    del selector que esta a la izquiera del ~.
+ */
+#selectorHermanoGeneral h2 ~ button {
+  background-color: blue;
+  color: white;
+}
+
+/* selector hermano adyacente (+)
+    selecciona a LA PRIMERA  etiquetas hermana
+    del selector que esta a la izquiera del +.
+ */
+#selectorHermanoAdyacente h2 + h3 {
+  color: yellow;
+}
+
+/* selector de atributo */
+a[href="https://www.kodemia.mx"],
+a[href="https://www.google.com"]
+{
+  text-decoration: none;
+}
+
+input[type="text"] {
+  width: 100px;
+  padding: 10px;
+}
+
+#pseudoselectores .btn {
+  background-color: #454556;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+
+#pseudoselectores .btn:hover {
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+#enlaces a:link {
+  color: red;
+}
+
+#enlaces a:visited,
+#enlaces a:hover {
+  color: green;
+}
+
+.caja {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+#listas div:first-child {
+  background-color: blue;
+  color: white;
+}
+
+#listas div:last-child {
+  background-color: green;
+}
+
+#listas div:nth-child(3) {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- 
+        encabezado, parte superior de la pagina
+        logo del pagina
+        menu principal de navegaicon
+     -->
+    <header>
+      <h1>Selectores avanzados</h1>
+      <section>
+        <nav>
+          <a href="./pages/atributos.html"> Ir a Atributos </a>
+        </nav>
+      </section>
+    </header>
+
+    <!-- 
+        Formas de escribir clases e ids
+        camelcase
+    selector hijo
+    selectorHijoDos
+
+    snakecase
+    selector hijo dos 
+    selector_hijo_dos -->
+
+    <main>
+      <section id="selectorHijo" class="contenedor">
+        <h2>Selector hijo</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+          quo, sunt velit eos dolorum rem optio aliquam nam exercitationem
+          consequatur numquam debitis blanditiis labore temporibus nisi
+          inventore sit, iste asperiores!
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          placeat qui molestiae, eaque nostrum dicta, perferendis repudiandae
+          porro dolorum quidem, animi dolores asperiores obcaecati quas! Qui,
+          deserunt ducimus. Nisi, quod?
+        </p>
+
+        <span>asdasddasd</span>
+
+        <div>
+          <p>parrafo nieto</p>
+          <p>asdasdasd</p>
+        </div>
+
+        <p>parrafo por fuera</p>
+      </section>
+
+      <!-- selector hijo directo -->
+      <section id="selectorHijoDirecto" class="contenedor">
+        <h2>Selector hijo Directo</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quam
+          doloribus, repudiandae asperiores, tempore ullam facere ea blanditiis
+          voluptatum consequuntur voluptatibus quisquam veniam minus sapiente
+          temporibus a porro soluta. Ab!
+        </p>
+
+        <p>parrafo hijo 2</p>
+        <p>parrafo 3</p>
+
+        <article>
+          <p>parrafo nieto</p>
+        </article>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum
+          sunt reiciendis culpa nulla? Labore saepe obcaecati minima commodi?
+          Impedit maxime eligendi illo exercitationem totam? Animi at provident
+          dolor nesciunt!
+        </p>
+      </section>
+
+      <!-- selector hermano general -->
+      <section id="selectorHermanoGeneral" class="contenedor">
+        <button>click me</button>
+        <h2>Selector hermano general</h2>
+        <button>boton hijo 2</button>
+        <span>span hermano</span>
+        <div>
+          <button>boton nieto 1</button>
+        </div>
+        <h3>Titulo 3</h3>
+        <button>boton hermaano 2</button>
+        <h2>h2 hijo 2</h2>
+        <button>234234</button>
+      </section>
+
+      <section id="selectorHermanoAdyacente" class="contenedor">
+        <h2>Selector hermano adyacente</h2>
+        <h3>Titulo h3 hijo</h3>
+        <p>parrafo hijo</p>
+
+        <h2>hermano3</h2>
+
+        <p>parrafo nieto</p>
+
+        <h2>titulo hermaano 2</h2>
+        <h3>titulo h3 2</h3>
+      </section>
+    </main>
+  </body>
+</html>

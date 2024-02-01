@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.caja {
+  width: 100px;
+  height: 60px;
+  background-color: cadetblue;
+  margin: 20px 0;
+}
+
+.caja2 {
+  background-color: red;
+  width: 40px;
+}
+/* position relative
+    habilita las propiedades
+    de direccion
+    top, left, bottom, right.
+ */
+
+/* Para mover el elemento desde el lado derecho
+    se usan valores negativos
+    como left:-20px o right:20px */
+.cajaRelativa {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.cajaRelativa2 {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #e3e3e3;
+  background-color: #000;
+  position: relative;
+}
+
+/* 
+    position absolute 
+    hay 2 casos. 
+        1) los elementos se posicionan de forma absoluta con el documento
+            el documento es el area visible de la pagina
+        2) los elementos se posicionan de forma absoluta con el primer elemento padre
+            contenedor cuya posicion sea RELATIVA
+*/
+.cajaAbsoluta {
+  background-color: yellow;
+  position: absolute;
+  top: 20px;
+  margin: 0;
+  right: 0;
+}
+
+.cajaAbsoluta2 {
+  position: absolute;
+  top: 0;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Position: Fixed
+  los elementos fixed se posicionan
+  en base a la ventana del navegador (Window)
+  y se quedan completamente fijos en la posicion 
+  establecida.
+ */
+.cajaFixed {
+  position: fixed;
+  background-color: rgb(10, 95, 54);
+  top: 0px;
+  left: 0;
+  z-index: 0;
+}
+
+.stickyContainer {
+  border: 5px solid blue;
+}
+
+.positionSticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  border: 1px solid blue;
+  background-color: white;
+}
+
+/* transiciones */
+.btn {
+  padding: 5px;
+  background-color: rgb(75, 109, 167);
+  color: white;
+  border: none;
+  /* transition: all 300ms cubic-bezier(0.31, -0.04, 0.62, 1.1); */
+  transition: background-color 300ms cubic-bezier(0.31, -0.04, 0.62, 1.1),
+    transform 300ms cubic-bezier(0.31, -0.04, 0.62, 1.1),
+    color 300ms cubic-bezier(0.31, -0.04, 0.62, 1.1);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: white;
+  color: rgb(75, 109, 167);
+  border: 1px solid rgb(75, 109, 167);
+  transform: scale(1.5);
+}
+
+.img {
+  transition: filter 800ms ease;
+}
+
+.img:hover {
+  filter: sepia(1);
+}
+
+/* animaciones */
+.animacionContainer {
+  width: 400px;
+  height: 150px;
+  background-color: #d3d3ed;
+  position: relative;
+  padding: 20px;
+}
+
+/*  */
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  /* animation: 
+      nombre de la animacion, duracion, efecto, al usar infinite, nuestra animacion nunca se detendra */
+  animation: moveCircle 5s linear infinite;
+  /* animation: moveCircle 4s linear infinite;  */
+  /* 4s duration, linear easing, infinite loop */
+}
+
+@keyframes moveCircle {
+  0% {
+    left: 0;
+    background-color: #3498db;
+  }
+  50% {
+    background-color: yellow;
+    left: 400px;
+    border-radius: 0;
+  }
+  100% {
+    background-color: red;
+    left: 0;
+  }
+}

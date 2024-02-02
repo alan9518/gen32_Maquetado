@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+    estilos base para pantallas de 
+    600px hacia abajo 
+    o mobile
+*/
+
+.contenedorNoResponsivo {
+  width: 450px;
+  height: 200px;
+  background-color: aquamarine;
+}
+
+.contenedorResponsivo {
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(32, 51, 94);
+}
+
+.cajaMorada {
+  background-color: purple;
+  height: 100px;
+  padding: 50px;
+  max-width: 300px;
+}
+
+/* media queries */
+
+/* estilos para tablet */
+/* 1380px */
+@media screen and (min-width: 768px) {
+  .contenedorNoResponsivo {
+    background-color: green;
+    height: 250px;
+  }
+}
+
+/* estilos para laptop normal */
+@media screen and (min-width: 992px) {
+  .contenedorNoResponsivo {
+    background-color: red;
+  }
+}
+
+/* estilos para laptop hd */
+@media screen and (min-width: 1440px) {
+  .contenedorNoResponsivo {
+    background-color: yellow;
+  }
+}

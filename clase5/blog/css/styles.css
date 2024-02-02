@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilos base Mobile first  */
+
+body {
+  background: linear-gradient(rgb(70, 76, 79), rgb(35, 38, 39));
+  min-height: 100vh;
+}
+
+header h1 {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+}
+
+.blogList {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.post {
+  background-color: #181a1b;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+}
+
+/* tablets */
+@media screen and (min-width: 768px) {
+  .post {
+    width: 45%;
+    display: inline-block;
+    margin: 20px 0.5%;
+  }
+}

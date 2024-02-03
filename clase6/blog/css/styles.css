@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilos base Mobile first  */
+
+body {
+  background: linear-gradient(rgb(70, 76, 79), rgb(35, 38, 39));
+  min-height: 100vh;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header .enlaces {
+  display: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogList {
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.post {
+  background-color: #181a1b;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+/* tablets */
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  header .enlaces {
+    display: block;
+  }
+
+  .enlaces ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .blogList {
+    flex-direction: row;
+    /* gap: 5%; */
+    justify-content: space-between;
+  }
+
+  .post {
+    flex-basis: 40%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blogList {
+    justify-content: flex-start;
+    gap: 5%;
+  }
+  .post {
+    flex-basis: 25%;
+  }
+}

@@ -1,0 +1,34 @@
+// En este archivo se crean las variables y mixins que se pueden
+// reusar en todo el sitio
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// declaramos variables
+// IMPORTANTE: las variables siempre empiezan con "$"
+$colorTextoRojo: #ffeeee;
+$postSpacing: 20px 20px 20px 20px;
+$blackColor: #252525;
+
+// decalaramos mixins
+@mixin flexColumnCenter() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// mixin con valor dinamico
+// el valor de $borderColor se puede definir
+// cuando se manda a llamar el mixin
+// con @include ejemplo:
+// @include btnPost(colorAUsar);
+@mixin btnPost($borderColor) {
+  border: 3px solid $borderColor;
+  background-color: transparent;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}

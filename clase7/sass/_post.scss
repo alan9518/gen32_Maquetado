@@ -1,0 +1,34 @@
+.post {
+  width: 80%;
+  max-width: 300px;
+  padding: $postSpacing;
+  background-color: white;
+  @include flexColumnCenter();
+  img {
+    border-radius: 50%;
+    &:hover {
+      filter: sepia(0.5);
+    }
+  }
+  // img:hover {
+  //   width: 150px;
+  //   height: 150px;
+  // }
+  .content {
+    padding: $postSpacing;
+    @include flexColumnCenter();
+    p {
+      color: $blackColor;
+    }
+    button {
+      @include btnPost(#2e208a);
+    }
+    #btnRojo {
+      @include btnPost($colorTextoRojo);
+      border: 2px solid #4b0303;
+    }
+    #btnVerde {
+      @include btnPost(#2bcf6a);
+    }
+  }
+}

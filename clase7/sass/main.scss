@@ -1,0 +1,31 @@
+// importar los modulos de SASS
+// IMPORTANTE: respetar el orden de importacion,
+// para que el modulo de post pueda usar las variables de global
+// PRIMERO hay que importar global y DESPUES post
+
+// para los import no hay que poner el "_" ni el ".scss"
+@import "global";
+@import "post";
+
+body {
+  background-color: $blackColor;
+}
+
+// colocar imagen de fondo
+#hero {
+  background-image: url("https://images.unsplash.com/photo-1525550557089-27c1bfedd06c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  min-height: 100vh;
+}
+
+section {
+  width: 100%;
+  @include flexColumnCenter();
+  gap: 20px;
+}
+
+.miParrafo {
+  color: white;
+}

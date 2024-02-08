@@ -1,0 +1,9 @@
+.myCol {
+  background-color: purple;
+  border: 1px solid #fff;
+}
+
+#container1 {
+  margin-bottom: 30px;
+  padding: 100px !important;
+}

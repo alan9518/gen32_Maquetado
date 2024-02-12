@@ -7,3 +7,9 @@
   margin-bottom: 30px;
   padding: 100px !important;
 }
+
+.miBoton {
+  background-color: green;
+  border-radius: 50px;
+  border: green;
+}

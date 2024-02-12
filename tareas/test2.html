@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pirámide con Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .columna {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+      .borde {
+        border: 2px solid #007bff;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-2 offset-5">
+          <div class="columna borde">6</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 offset-4">
+          <div class="columna borde">5</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 offset-3">
+          <div class="columna borde">4</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-8 offset-2">
+          <div class="columna borde">3</div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- 12 - 10 = 2/2 = 1 -->
+        <div class="col-10 offset-1">
+          <div class="columna borde">2</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <div class="columna borde">1</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
